@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function tryRemoveFromArray(arr, x){
+        for(let i = 0; i < arr.length; i++){
+            if(x === arr[i]){
+                arr.splice(i,1);
+            }
+        }
+        return arr
+    }
+    let diemVan = [7, 6, 8, 5, 4]
+    let x = 3
+    console.log(tryRemoveFromArray(diemVan, 3))
+</script>

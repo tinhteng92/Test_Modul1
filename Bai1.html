@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let diemThi = [8, 9, 10, 6, 5, 4]
+
+    function findMax(arr) {
+        let maxScore = arr[0];
+        for (let i = 0; i <= arr.length; i++){
+            if(maxScore < arr[i]){
+                maxScore = arr[i]
+            }
+        }
+        return maxScore
+    }
+
+    console.log("điểm cao nhất là " + findMax(diemThi))
+</script>
